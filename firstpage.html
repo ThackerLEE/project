@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon_io/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./content/css/reset2.css" />
+    <link rel="stylesheet" href="./content/css/firstmain.css" />
+    <link rel="stylesheet" href="./content/css/vegas.css">
+    <script src="script/jquery-1.12.4.min.js"></script>
+    <script src="script/vegas.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+    <title>웨이브</title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="header-contents">
+            <h1 class="title"><img src="images/logo.png" alt=""></h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li style="z-index: 99999;"><a href="#고객센터">고객센터</a></li>
+                    <li><a href="#요금제">요금제</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider-bg"></div>
+        <div class="slider-content">
+            <h1 class="copy">
+                <span
+                    style="font-family: 'jua', sans-serif !important; padding-bottom: 40px; color: rgb(162, 92, 255);">WAVVE</span>
+                <span>영화, TV 프로그램을<br> 무제한으로. </span>
+            </h1>
+            <a href="index.html" class="btn">더 알아보기</a>
+        </div>
+    </div>
+    <script>
+        $(".slider .slider-bg").vegas({
+
+            delay: 10000,
+            // overlay: './dot/02.png',
+            transitionDuration: 5000,
+            slides: [{
+                video: {
+                    src: [
+                        '/video/123.mp4',
+                    ],
+                    loop: true,
+                    mute: true
+                }
+            }]
+        });
+    </script>
+
+</body>
+
+</html>

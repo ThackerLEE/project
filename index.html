@@ -1,107 +1,415 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/10000hours.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <title>1만 시간의 법칙</title>
+    <title>웨이브 (wavve)</title>
+    <link rel="shortcut icon" href="https://www.wavve.com/favicon.ico">
+    <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/reset.css">
+    <link rel="stylesheet" href="content/css/slide.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="script/jquery-1.12.4.min.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/darkmode.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    </style>
+
 </head>
 
-<body>
-    <section id="content">
-        <div id="wrapper">
-            <div class="title">
-                <img src="img/clock.png" alt="background_logo" class="clock_img">
-                <div class="title_img">
-                    <img src="img/title.png" alt="1만 시간의 법칙">
+<input id="darkmode" value="light 모드" style="font-size: 20px;" onclick="darkmode(this); ">
+<div class="top_btn">
+    <a href="#">
+        <img src="images/up.png" alt="topbtn">
+    </a>
+</div>
+<header id="header">
+
+
+
+    <div class="head_util">
+        <!-- <div class="area100"> -->
+        <div class="util_hm">
+            <ul>
+                <li><a href="#">프로필1</a></li>
+                <li><a href="#">이용권</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="gnb">
+        <div class="gnb-inner">
+            <h1 id="logo"><a href="/"><img src="images/logo.png" alt="wavve"></a></h1>
+            <ul class="gnb-menu">
+                <li class="float-menu">
+                    <a class="gnb-home" href="">홈</a>
+                </li>
+
+                <div class="dropdown">
+                    <button href="" class="dropbtn float-menu">카테고리</button>
+                    <div class="dropdown-con">
+                        <div class="cg-pad">
+                            <a href="#">전체 카테고리 보기</a>
+                        </div>
+                        <div class="border-top">
+                            <a href="#" style="color:#ffffff;font-weight: bold;">추천 메뉴</a>
+                            <a href="#">드라마</a>
+                            <a href="#">예능</a>
+                            <a href="#">영화</a>
+                            <a href="#">영화플러스</a>
+                            <a href="#">프로야구</a>
+                            <a href="#">ORIGINAL</a>
+                            <a href="#">CLASSIC</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <li class="float-menu">
+                    <a href="">LIVE</a>
+                </li>
+                <li class="float-menu">
+                    <a href="">MY</a>
+                </li>
+            </ul>
+            <ul class="gnb_right">
+                <li><button class="btn_search"><span><img src="images/돋보기.svg" alt="">검색하기</span></button></li>
+        </div>
+    </div>
+
+    </ul>
+</header>
+<div id="slide">
+
+</div>
+<div id="con1-outer">
+    <div id="con1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/20210827_banner_114804.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210608_banner_165301.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210616_banner_200149.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210804_banner_174606.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210830_banner_174410.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210625_banner_161844.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210819_banner_221637.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/20210825_banner_115626.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div onclick=mySwiper.autoplay.play(); class="autoplay play">▷</div>
+        <div onclick=mySwiper.autoplay.stop() class="autoplay stop">||</div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Initialize Swiper -->
+
+<div id="con2" class="con_margin">
+    <h1 style="font-size: 24px; color: #ffffff; letter-spacing: 1.2;">지금 핫한 프로그램</h1>
+    <span class="moer-v"><a href="#">더보기></a></span>
+
+    <div class="swiper2 mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide title-txt"><img src="images/심야괴담회.jpg" alt="">
+                <span>심야괴담회</span>
+            </div>
+
+            <div class="swiper-slide title-txt"><img src="images/도시어부.jpg" alt="">
+                <div class="sub-title">
+                    <div class="sub-right"><span>도시어부3</span></div>
                 </div>
             </div>
-            <div class="intro">
-                <div class="intro_saying">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</div>
-                <div class="explain">
-                    <div class="quotes">
-                        <img src="img/quotes.png" alt="따옴표">
-                    </div>
-                    <p>
-                        <span>1만 시간의 법칙</span>은<br>어떤 분야의 전문가가 되기위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-                    </p>
-                </div>
+            <div class="swiper-slide title-txt"><img src="images/당혹사.jpg" alt="">
+                <span>당신이 혹하는 사이2</span>
             </div>
-            <div class="inputs">
-                <div class="field">
-                    <p>나는</p>
-                    <input type="text" id="field_value" placeholder="예)프로그래밍">
-                    <p>전문가가 될 것이다.</p>
-                </div>
-                <div class="time">
-                    <p>그래서 앞으로 매일 하루에</p>
-                    <div>
-                        <input type="text" id="time_value" placeholder="예)5">
-                        <p>시간씩 훈련할 것이다.</p>
-                    </div>
-                </div>
+            <div class="swiper-slide title-txt"><img src="images/사랑콜.jpg" alt="">
+                <span>사랑의 콜센타</span>
             </div>
-            <div class="start">
-                <div class="btn_wrap">
-                    <button class="start_btn">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-                    <div class="click_img">
-                        <img src="img/click.png" alt="클릭">
-                    </div>
-                </div>
+            <div class="swiper-slide title-txt"><img src="images/홍천기.jpg" alt="">
+                <span>홍천기</span>
             </div>
-            <div class="result_loading">
-                <div class="img_wrap">
-                    <img src="img/loading.png" alt="로딩중">
-                </div>
+            <div class="swiper-slide title-txt"><img src="images/유미업.jpg" alt="">
+                <span>유 레이즈 미 업(You Raise Me Up)</span>
             </div>
-            <div class="result">
-                <div class="result_wrap">
-                    <div>
-                        당신은 <span class="field_result"></span>전문가가 되기 위해서
-                    </div>
-                    <div>
-                        대략 <span class="time_result"></span>일 이상 훈련하셔야 합니다! :)
-                    </div>
-                </div>
-                <div class="buttons">
-                    <div class="go">
-                        <button class="modal_btn">훈련하러 가기 GO!GO!</button>
-                    </div>
-                    <div class="share">
-                        <button class="share_btn">공유하기</button>
-                    </div>
-                </div>
+            <div class="swiper-slide title-txt"><img src="images/편스토랑.jpg" alt="">
+                <span>신상 출시 편스토랑</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/골목식당.jpg" alt="">
+                <span>백종원의 골목식당</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/경찰수업.jpg" alt="">
+                <span>경찰수업</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/놀면뭐하니.jpg" alt="">
+                <span>놀면 뭐하니?</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/라스.jpg" alt="">
+                <span>라디오 스타</span>
             </div>
         </div>
-    </section>
-    <section id="modal">
-        <div class="modal_wrap">
-            <div class="cheer">
-                <h1>화이팅!♥♥♥</h1>
-                <h3>당신의 꿈을 응원합니다!</h3>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+<div id="con2" class="content-margin">
+    <h1 style="font-size: 24px; color: #ffffff; letter-spacing: 1.2;">HBO시리즈, 지금 도착했습니다</h1>
+    <span class="moer-v"><a href="#">더보기></a></span>
+
+    <div class="swiper2 mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide title-txt"><img src="images/유포리아 시즌1.jpg" alt="">
+                <span>유포리아 시즌1</span>
             </div>
-            <div class="licat_img">
-                <img src="img/licat.png" alt="라이캣 응원">
+            <div class="swiper-slide title-txt"><img src="images/언두잉.jpg" alt="">
+                <span>언두잉/span>
             </div>
-            <div class="btn">
-                <button class="close_btn">종료하고 진짜 훈련하러 가기 GO!GO!</button>
-                <p>(그냥 닫기 버튼입니다)</p>
+            <div class="swiper-slide title-txt"><img src="images/제너레이션 킬.jpg" alt="">
+                <span>제너레이션 킬</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/로마 시즌1.jpg" alt="">
+                <span>로마 시즌1</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/섹스 앤 더 시티 시즌6.jpg" alt="">
+                <span>섹스 앤 더 시티 시즌6</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/섹스 앤 더 시티 시즌5.jpg" alt="">
+                <span>섹스 앤 더 시티 시즌5</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/섹스 앤 더 시티 시즌4.jpg" alt="">
+                <span>섹스 앤 더 시티 시즌4</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/섹스 앤 더 시티 시즌3.jpg" alt="">
+                <span>섹스 앤 더 시티 시즌3</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/소프라노스 시즌 1.jpg" alt="">
+                <span>소프라노스 시즌 1</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/디보스.jpg" alt="">
+                <span>디보스</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/볼러스 시즌1.jpg" alt="">
+                <span>볼러스 시즌1</span>
             </div>
         </div>
-    </section>
-    <footer id="copyright">
-        <div class="logo_img">
-            <img src="img/logo.png" alt="weniv">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+
+<div id="con2" class="content-margin">
+    <h1 style="font-size: 24px; color: #ffffff; letter-spacing: 1.2;">이 영화 찾으세요? #TV속영화</h1> <span class="moer-v"><a
+            href="#">더보기></a></span>
+
+    <div class="swiper2 mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide title-txt"><img src="images/존윅.jpg" alt="">
+                <span>존 윅:리로드</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/존윅 3파라벨룸.jpg" alt="">
+                <span>존 윅3:파라벨룸</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/최종병기 활.jpg" alt="">
+                <span>최종병기 활</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/인간중독.jpg" alt="">
+                <span>인간중독</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/쓰리썸머나잇.jpg" alt="">
+                <span>쓰리썸머나잇</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/오케이 마담.jpg" alt="">
+                <span>오케이 마담</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/옥보단3D.jpg" alt="">
+                <span>옥보단3D</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/달콤한 인생.jpg" alt="">
+                <span>달콤한 인생</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/봉오동전투.jpg" alt="">
+                <span>봉오동 전투</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/검사외전.jpg" alt="">
+                <span>검사외전</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/미션 파서블.jpg" alt="">
+                <span>미션 파서블</span>
+            </div>
         </div>
-        <p>
-            ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 Weniv에 있습니다.<br>
-            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+<div id="con2" class="content-margin">
+    <h1 style="font-size: 24px; color: #ffffff; letter-spacing: 1.2;">이젠 이 예능들 없는 삶은 꿈도 못 꿔요
+    </h1>
+    <span class="moer-v"><a href="#">더보기></a></span>
+    <div class="swiper2 mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide title-txt"><img src="images/1박2일 시즌4.jpg" alt="">
+                <span>1박2일 시즌4</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/런닝맨.jpg" alt="">
+                <span>런닝맨</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/나 혼자 산다.jpg" alt="">
+                <span>나 혼자 산다</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/무한도전.jpg" alt="">
+                <span>무한도전</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/미운 우리 새끼.jpg" alt="">
+                <span>미운 우리 새끼</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/전지적 참견시점.jpg" alt="">
+                <span>전지적 참견시점</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/골목식당.jpg" alt="">
+                <span>백종원의 골목식당</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/너는 내운명.jpg" alt="">
+                <span>동상이몽2_너는 내 운명</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/맛녀.jpg" alt="">
+                <span>맛있는 녀석들</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/슈돌.jpg" alt="">
+                <span>슈퍼맨이 돌아왔다</span>
+            </div>
+            <div class="swiper-slide title-txt"><img src="images/연참3.jpg" alt="">
+                <span>연애의 참견3</span>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+<content4>
+    <div class="inner4">
+        <section class="slider">
+            <h3></h3>
+            <ul class="content_img">
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </section>
+    </div>
+</content4>
+<footer id="footer">
+    <div class="footer-notice">
+        <div class="footer-inner">
+            <h2 class="notice">공지사항</h2>
+            <span>HBO 시리즈 신규오픈 안내</span>
+            <div class="footer-btn"><img src="images/previmg.png" alt=""><img src="images/nextimg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer-last-list">
+        <ul class="footer-list">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">서비스 소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#" style="color: #a5a5a5a5; font-weight:700;">개인정보 처리방침</a></li>
+            <li><a href="#">고객센터</a></li><br>
+        </ul>
+        <p> <span class="first">콘텐츠웨이브 주식회사</span>
+            <span>대표이사 이태현</span>
+            <span class="last">고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00/ 주말 및 공휴일 휴무)</span><br>
+            <span class="first">사업자등록번호 220-88-38020통신판매업</span>
+            <span>신고번호 : 제2021-서울영등포-0585호</span>
+            <span class="last">통신판매업 정보 공개 : <a
+                    href="">http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a></span><br>
+            <span class="first">서울특별시 영등포구 여의나루로 60 포스트타워19층</span>
+            <span class="last">전자우편주소 : <a href="">helpdesk@wavve.com</a></span><br>
         </p>
-    </footer>
-    <script type="text/javascript" src="js/10000hours.js"></script>
+        <span class="copyright">Copyright© 콘텐츠웨이브(주) All rights reserved.</span>
+        <div class="menu-footer">
+            <div class="footlogo"><img src="images/footlogo.png" alt=""></div>
+            <div class="select_nav">
+                <select name="" id="" aria-placeholder="사업자용 웨이브 가입   ">
+                    <option value="0">사업자용 웨이브 가입</option>
+                    <option value="1">웨이브온 서비스 소개</option>
+                    <option value="2">웨이브온 PC방 서비스</option>
+                    <option value="3">웨이브온 도서관 서비스</option>
+                    <option value="4">웨이브온 병원 서비스</option>
+                    <option value="5">웨이브온 숙박 서비스</option>
+                    <option value="6">웨이브온 일반 서비스</option>
+                </select>
+                <div class="facebook"><img src="images/facebookminilogo.png" alt=""></div>
+                <div class="naver"><img src="images/네이버로고.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        direciotn: "vertical",
+        autoplay: {
+            delay: 1,
+            clickable: true,
+        },
+        speed: 4500,
+        loopFillGroupWithBlank: true,
+        // autoHeight: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        autoplayDisableOnInteraction: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+    });
+
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        direciotn: "vertical",
+
+        loopFillGroupWithBlank: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+    });
+</script>
 </body>
 
 </html>

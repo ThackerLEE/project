@@ -1,0 +1,182 @@
+html,
+.con1 .con2 {
+    position: relative;
+    height: 100%;
+}
+
+
+/* body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+} */
+
+.swiper {
+    height: 300px;
+    width: 100%;
+    /* top: 120px; */
+    overflow: hidden;
+    margin: 0 auto 50px;
+    position: relative;
+    min-width: 1240px;
+    max-width: 2340px;
+    min-height: 440px;
+    /* animation-timing-function: steps(5, end); */
+    transition-duration: 1000ms;
+}
+
+
+
+.swiper2 {
+
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    min-width: 1238px;
+    max-width: 321px;
+    min-height: 330px;
+    /* margin: 0 auto 50px; */
+}
+
+.swiper-slide .swiper-slide2 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #1b1b1b;
+}
+
+.slide-1 {
+    background: url(images/골때리그녀들.png), url(images/20210827_banner_114804.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+
+#con1 .swiper-slide img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#con2 .swiper-slide img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.swiper .swiper-button-next:hover {
+    color: blue;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 1030px;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: #fff;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: #fff;
+}
+
+.swiper2 .title-txt {
+    display: table;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 100%;
+    background-color: #252525;
+    height: 390px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.swiper2 .title-txt span {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 0 15px 10px;
+    font-weight: 700;
+    color: rgb(160, 156, 156);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    table-layout: fixed;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.swiper2 .swiper-slide img:hover {
+    transform: scaleY(1.01) scaleX(1.01);
+    /* -webkit-transform: scaleX(1.06); */
+    transition: all 0.2s ease-in-out;
+}
+
+.swiper2 .swiper-button-next {
+    background: url(/images/nextbtn.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    background-position: center;
+}
+
+.swiper2 .swiper-button-prev {
+    background: url(/images/prevbtn.png) no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    /* top: 50%; */
+    left: 0;
+    background-position: center;
+}
+
+.swiper2 .swiper-button-next::after {
+    display: none;
+}
+
+.swiper2 .swiper-button-prev::after {
+    display: none;
+}
+
+.swiper2 .swiper-button-next,
+.swiper2 .swiper-button-prev {
+
+    display: none;
+}
+
+.swiper2:hover .swiper-button-next,
+.swiper2:hover .swiper-button-prev {
+    display: block;
+    cursor: pointer;
+}
+
+.swiper2:hover {
+    cursor: pointer;
+}
